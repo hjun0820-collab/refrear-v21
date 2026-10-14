@@ -10,3 +10,9 @@ R4_1 https://v3b.fal.media/files/b/0aae49f7/ZAvDuFk9wGPxM0mfNBkYm_pX7ZxFQ2.png
 R4_2 https://v3b.fal.media/files/b/0aae49f7/fXYkIbGTbaFsFZUCXC3BI_e2TH1hiH.png
 R5_1 https://v3b.fal.media/files/b/0aae49f7/3F9sVBRBKNVyf7Tw7MHzF_z2YOvwnF.png
 R5_2 https://v3b.fal.media/files/b/0aae49f7/Ln0TGYbe_pFe83NektV8j_Edj7JELP.png
+R2b_1 https://v3b.fal.media/files/b/0aae4aee/E92eIWxyUsxzdsdMw8h8d_5SuPdqnM.png
+R2b_2 https://v3b.fal.media/files/b/0aae4aee/-jRVGlbKXbroVLMcIt2c__XaDGpegS.png
+R2c_a1 https://v3b.fal.media/files/b/0aae4afe/e6mY7djq0p6BzVZ0G58Yy_jOalrMgQ.png
+R2c_a2 https://v3b.fal.media/files/b/0aae4afe/AqO-nYQGseuKOK1QWMK3l_DNjiHIwg.png
+R2c_b1 https://v3b.fal.media/files/b/0aae4afe/E7g6AyYr3j0Sch7uDiQ0z_0S1bRaLP.png
+R2c_b2 https://v3b.fal.media/files/b/0aae4afe/GN9FXpWyFt7PWppVF9f9d_QNLy5XN9.png

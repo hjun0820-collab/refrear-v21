@@ -33,8 +33,13 @@ TIMELINE = [
     ("keep", 696, 792),   # 29.00-33.00 end card
 ]
 
-# Gentle shared grade applied to every frame (kept + new) so the cut points sit in one look.
-GRADE = "eq=contrast=0.97:saturation=0.96:gamma=1.01,curves=all='0/0.02 1/0.985'"
+# Shared Japanese-style grade on every frame (kept + new): brighter, airy, lifted blacks,
+# softer contrast, slightly lower saturation, a touch of cool in the shadows.
+GRADE = ("eq=brightness=0.035:contrast=0.92:saturation=0.86:gamma=1.08,"
+         "curves=r='0/0.04 0.5/0.54 1/0.98':g='0/0.05 0.5/0.56 1/0.99':b='0/0.07 0.5/0.57 1/1'")
+# End card gets about half the lift so the refrear logo stays legible.
+GRADE_SOFT = ("eq=brightness=0.017:contrast=0.96:saturation=0.93:gamma=1.04,"
+              "curves=r='0/0.02 0.5/0.52 1/0.99':g='0/0.025 0.5/0.53 1/0.995':b='0/0.035 0.5/0.535 1/1'")
 GRAIN = "noise=alls=3:allf=t"
 CONFORM = f"fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1"
 
@@ -66,7 +71,8 @@ def main():
         n = b - a
         part = tmp / f"{idx:02d}_{sid}.mov"
         if sid == "keep":
-            vf = f"trim=start_frame={a}:end_frame={b},setpts=PTS-STARTPTS,{GRADE}"
+            grade = GRADE_SOFT if b == 792 else GRADE
+            vf = f"trim=start_frame={a}:end_frame={b},setpts=PTS-STARTPTS,{grade}"
             run(["ffmpeg", "-v", "error", "-y", "-i", str(V20), "-vf", vf, "-an",
                  "-c:v", "prores_ks", "-profile:v", "3", str(part)])
         else:
