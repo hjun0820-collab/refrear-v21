@@ -12,3 +12,9 @@ R5_v1 https://v3b.fal.media/files/b/0aae4a3b/b7FjS9qhWim5VC0w8M_lw_output.mp4
 R5_v2 https://v3b.fal.media/files/b/0aae4a3a/rn98qA8QBThLxQFPHO7oO_output.mp4
 R2c_v1 https://v3b.fal.media/files/b/0aae4b22/98H4Ed1BCs7_X0hjEj8Qp_output.mp4
 R2c_v2 https://v3b.fal.media/files/b/0aae4b24/zqBAdIZMHO5JtrMSNIkwx_output.mp4
+R1bc_v2 https://v3b.fal.media/files/b/0aae4d9c/MHvJCfsub3oKHG8xgSPGv_output.mp4
+R1bc_v1 https://v3b.fal.media/files/b/0aae4d9f/04D0NZR1odOuNMsIus7pX_output.mp4
+R4c_v1 https://v3b.fal.media/files/b/0aae4d9f/ExM2qr4fGk9zYYJszL8_p_output.mp4
+R1ac_v2 https://v3b.fal.media/files/b/0aae4da1/vYi_wyapilzFutSoK7ppW_output.mp4
+R1ac_v1 https://v3b.fal.media/files/b/0aae4db4/tpsmqt48KL3h0NkQB8Ihu_output.mp4
+R4c_v2 https://v3b.fal.media/files/b/0aae4db1/jazqOx9qy-NMZz01x8C9t_output.mp4
