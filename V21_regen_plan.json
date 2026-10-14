@@ -1,0 +1,70 @@
+{
+  "project": "refrear Unrolla V21",
+  "base_video": "refrear_Unrolla_v20_brand_review (1080x1920, 24fps, 33.0s)",
+  "audio": "keep V20 audio track untouched (voice + music + refrear pronunciation already approved)",
+  "keep_from_v20": [
+    {"range": "0.00-0.75", "shot": "S01 LINE chat"},
+    {"range": "0.75-3.42", "shot": "S02 mirror"},
+    {"range": "3.42-7.50", "shot": "S03 MRT"},
+    {"range": "13.75-16.50", "shot": "S07 lens in dish"},
+    {"range": "29.00-33.00", "shot": "S12 end card (box not changed per user)"}
+  ],
+  "identity_refs": {
+    "face": ["ref/heroine_face_ref_A.jpg", "ref/heroine_face_ref_B.jpg"],
+    "face_note": "Face identity ONLY from refs A/B. Ignore their bedroom setting and camisole/cardigan.",
+    "outfit": ["ref/anchor_8.20.png", "ref/anchor_10.00.png"],
+    "outfit_note": "Fitted cropped white crew-neck tee, light-blue straight jeans, dark-brown leather shoulder bag on right shoulder.",
+    "lens": ["ref/lens_ningyuefei_26.6.png", "ref/lens_ningyuefei_iris_26.6.png"],
+    "lens_note": "refrear Unrolla Pink 凝月緋: dusty rose-to-mauve iris ring with fine dot-matrix pattern, dark grey limbal ring, natural brown inner iris near pupil."
+  },
+  "global_style": "Japanese cinematic brand commercial, natural soft daylight with real shadows, clean airy palette, gentle film grain, realistic skin texture with visible pores and light freckles, no heavy retouching, no beauty filter, no whitening, sharp detailed eyes, 35mm-50mm lens look, handheld but steady.",
+  "global_negative": "face morphing, identity change, different person, changing bangs, warped hands, extra fingers, body distortion, exaggerated hips, plastic skin, over-smoothing, oversaturated, heavy filter, text, watermark, subtitles, jitter, sudden cuts within shot",
+  "segments": [
+    {
+      "id": "R1a", "replace": "7.50-9.25", "dur": 1.75, "shot": "Street walk",
+      "keyframe_prompt": "Young East Asian woman (face exactly as reference), long dark-brown layered hair with light wispy see-through bangs, fitted cropped white tee, light-blue straight jeans, brown leather shoulder bag, walking on a Taipei sidewalk with tactile paving, morning daylight, medium shot from waist up tracking alongside her, slim natural proportions.",
+      "motion_prompt": "She walks forward at a relaxed natural pace, arms swinging lightly, hair moving softly with each step, camera tracks smoothly beside her, slight glance ahead. Natural gait, no sliding feet.",
+      "continuity_in": "follows MRT shot ending at anchor_7.45.png"
+    },
+    {
+      "id": "R1b", "replace": "9.25-10.92", "dur": 1.67, "shot": "Enter cafe",
+      "keyframe_prompt": "Same woman seen from behind three-quarter, hand on the wooden frame of a glass cafe door, warm interior with plants and pendant lights visible, daylight outside.",
+      "motion_prompt": "She pushes the door open and steps inside in one continuous movement, turning her head slightly to look into the cafe, profile briefly visible. Smooth natural motion.",
+      "continuity_out": "leads into R2 cafe interior"
+    },
+    {
+      "id": "R2", "replace": "10.92-13.75", "dur": 2.83, "shot": "Cafe look-around (fixes 12.15-12.70 face change)",
+      "keyframe_prompt": "Same woman inside a bright Japanese-style cafe, medium close-up chest-up, wooden counter, menu board and pendant lamps softly blurred behind, soft window light from side, face consistent with reference, light wispy bangs.",
+      "motion_prompt": "She slowly turns her head from right to left scanning the room, eyes searching, a small anticipation in her expression. Face, bangs and hairstyle stay identical through the whole shot. Locked identity, subtle camera push-in.",
+      "must": "one continuous generation, no splice"
+    },
+    {
+      "id": "R3", "replace": "16.50-18.50", "dur": 2.0, "shot": "Walk toward friend (back view)",
+      "keyframe_prompt": "Over-the-shoulder back view of the same woman walking between cafe tables toward a friend sitting by a large window, friend seen from behind with long dark hair and light-blue shirt, bright street outside the window.",
+      "motion_prompt": "She walks a few steps toward the friend's table with a natural stride, bag swaying slightly, camera follows behind at hip height.",
+      "continuity_in": "anchor_16.45.png is lens dish; continuity_ref anchor_17.20.png for staging"
+    },
+    {
+      "id": "R4", "replace": "18.50-22.00", "dur": 3.5, "shot": "Meeting friend (friend POV)",
+      "keyframe_prompt": "Point of view of the seated friend (friend's face never visible, only blurred shoulder/hair edge in foreground), the same woman arriving at the table by the window, leaning in slightly with one hand on the table, cappuccino cups in foreground, warm natural daylight, face exactly as reference.",
+      "motion_prompt": "She arrives, meets her friend's eyes and breaks into a natural warm happy smile, slight shoulder lift, small relaxed laugh. Genuine and soft, not exaggerated, not stiff. Identity, bangs and face shape stay constant; single continuous shot with no internal cut.",
+      "must": "replace both 18.5-20.83 and 20.83-22.0 with one shot"
+    },
+    {
+      "id": "R5", "replace": "22.00-29.00", "dur": 7.0, "shot": "Eye close-up with 凝月緋",
+      "keyframe_prompt": "Extreme macro close-up of the same young woman's eye (young skin, light freckles consistent with reference, no wrinkles), wearing refrear Unrolla Pink 凝月緋 colored contact lens exactly as lens reference: dusty rose-to-mauve outer iris with fine dot pattern, dark grey limbal ring, natural brown center. Soft pink-beige daylight, crisp lashes.",
+      "motion_prompt": "Slow gentle blink then eye opens and looks softly toward camera, very subtle push-in, light glint moves across the lens. The lens color and pattern stay exactly the same in every frame; no change to brown or purple, same single eye throughout.",
+      "must": "one eye, one lens design for the full 7s (may generate 5s + extend)"
+    }
+  ],
+  "post": [
+    "Conform each clip to exact frame count at 24fps, 1080x1920",
+    "Unified Japanese-film grade across new + kept shots (match to S02 mirror / S03 MRT)",
+    "Re-mux with untouched V20 audio",
+    "Deliver V21 MP4 + before/after timecode table + side-by-side review"
+  ],
+  "open_questions": [
+    "V20 mirror/MRT face is slightly different from refs A/B (smoother skin, sharper chin) — identity match across the cut at 7.50 needs review",
+    "Lens reference is itself an AI frame; match to real product 凝月緋 remains to be confirmed"
+  ]
+}

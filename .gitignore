@@ -1,0 +1,4 @@
+# large source / working media (kept local, not in git)
+v20/*.mov
+frames/
+work/
