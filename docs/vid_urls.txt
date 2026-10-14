@@ -1,0 +1,12 @@
+R1a_v1 https://v3b.fal.media/files/b/0aae4a32/CINFh0GNQgHoVwVYNIJVf_output.mp4
+R1a_v2 https://v3b.fal.media/files/b/0aae4a31/DxyO9XFTKDixMNWwqbMD8_output.mp4
+R1b_v1 https://v3b.fal.media/files/b/0aae4a31/fVbSf83ubHu1tEF-6YHzL_output.mp4
+R2_v1 https://v3b.fal.media/files/b/0aae4a32/V60JvpDSaq75XhjWbrI1X_output.mp4
+R2_v2 https://v3b.fal.media/files/b/0aae4a39/0Ttkg4Om4ntOmoTonZcPQ_output.mp4
+R3_v1 https://v3b.fal.media/files/b/0aae4a2f/_6XhwnHHX9WfKyID3rqyL_output.mp4
+R3_v2 https://v3b.fal.media/files/b/0aae4a30/lBUjlI2B4oFUoGXiRunwR_output.mp4
+R1b_v2 https://v3b.fal.media/files/b/0aae4a45/82ClXux0qo9i833Wse8iE_output.mp4
+R4_v1 https://v3b.fal.media/files/b/0aae4a34/O7Ct9Tj1XpszLObYL9JaA_output.mp4
+R4_v2 https://v3b.fal.media/files/b/0aae4a35/EloxDywzfwPJ3wHfIacjN_output.mp4
+R5_v1 https://v3b.fal.media/files/b/0aae4a3b/b7FjS9qhWim5VC0w8M_lw_output.mp4
+R5_v2 https://v3b.fal.media/files/b/0aae4a3a/rn98qA8QBThLxQFPHO7oO_output.mp4
